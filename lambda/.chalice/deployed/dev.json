@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "name": "handle_sqs_message",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-1:661798210997:function:create-db-user-dev-handle_sqs_message"
+    },
+    {
+      "name": "handle_sqs_message-sqs-event-source",
+      "resource_type": "sqs_event",
+      "queue_arn": "arn:aws:sqs:ap-northeast-1:661798210997:create-db-account",
+      "event_uuid": "cc6cf2c1-722a-47ab-983b-3b8f7fa70481",
+      "queue": "create-db-account",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-1:661798210997:function:create-db-user-dev-handle_sqs_message"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
