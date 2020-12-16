@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "app_name": "create-db-user",
+  "stages": {
+    "dev": {
+      "manage_iam_role": false,
+      "iam_role_arn": "arn:aws:iam::111111111111:role/create-db-user-dev",
+      "environment_variables": {
+	 "DB_USER": "db_user",
+	 "DB_PASSWORD": "db_password"
+      },
+      "subnet_ids": [
+	 "subnet-0f6ea4292ab9a63db",
+	 "subnet-00d29b42b2e17b5b5"
+      ],
+      "security_group_ids": ["sg-00668399e4bdd462e"]
+    }
+  }
+}
