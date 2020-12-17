@@ -61,3 +61,4 @@ def handle_sqs_message(event):
 
         create_user(user, passwd)
 
+    return {'statusCode': 200}
